@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: team-a
+  name: team-alpha
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/cokeryeena/zero-trust-k8s-platform.git
     targetRevision: main
-    path: apps/team-a
+    path: apps/team-alpha
   destination:
     server: https://kubernetes.default.svc
-    namespace: team-a
+    namespace: team-alpha
   syncPolicy:
     automated:
       prune: true
