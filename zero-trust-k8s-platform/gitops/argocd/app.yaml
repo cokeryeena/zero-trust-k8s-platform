@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alpha1
+]apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: team-alpha
@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/cokeryeena/zero-trust-k8s-platform.git
     targetRevision: main
-    path: apps/team-alpha
+    path: gitops/applications/team-alpha
   destination:
     server: https://kubernetes.default.svc
     namespace: team-alpha
