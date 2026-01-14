@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: team-alpha-service
+  namespace: team-alpha
+spec:
+  selector:
+    app: team-alpha-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

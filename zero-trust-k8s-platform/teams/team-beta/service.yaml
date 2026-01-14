@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: team-beta-service
+  namespace: team-beta
+spec:
+  selector:
+    app: team-beta-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

@@ -1,0 +1,12 @@
+name: Validate Manifests
+
+on: [push]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Validate Kubernetes manifests
+        run: kubectl apply --dry-run=client -f k8s/

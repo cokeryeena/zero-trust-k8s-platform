@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team-alpha-app
+  namespace: team-alpha
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: team-alpha-app
+  template:
+    metadata:
+      labels:
+        app: team-alpha-app
+    spec:
+      containers:
+        - name: app
+          image: my-image

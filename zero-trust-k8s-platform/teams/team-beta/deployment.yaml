@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team-beta-app
+  namespace: team-beta
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: team-beta-app
+  template:
+    metadata:
+      labels:
+        app: team-beta-app
+    spec:
+      containers:
+        - name: app
+          image: my-image

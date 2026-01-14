@@ -1,0 +1,4 @@
+prometheus:
+  enabled: true
+  service:
+    type: ClusterIP
