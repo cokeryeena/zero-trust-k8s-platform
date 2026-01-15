@@ -1,6 +1,25 @@
+# Terraform
 .terraform/
 *.tfstate
 *.tfstate.*
 *.log
-.env
+.terraform.d/
 
+# Helm
+.config/helm/
+ache/helm/repository/
+
+# Kubernetes / local config
+.kube/
+
+# Shell / history
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.lesshst
+
+# Binary / temporary
+*.tar.gz
+
+.cache/helm/
