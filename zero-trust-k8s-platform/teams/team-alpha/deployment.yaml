@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: app
-          image: my-image
+          image: nginx
