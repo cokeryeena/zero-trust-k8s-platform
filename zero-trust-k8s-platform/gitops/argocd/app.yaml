@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/cokeryeena/zero-trust-k8s-platform.git
     targetRevision: main
-    path: gitops/applications/team-alpha
+    path: zero-trust-k8s-platform/teams/team-alpha
   destination:
     server: https://kubernetes.default.svc
     namespace: team-alpha
