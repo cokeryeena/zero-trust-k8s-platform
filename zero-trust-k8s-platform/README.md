@@ -111,3 +111,15 @@ In this project, the repository was cloned into a subdirectory (zero-trust-k8s-p
 - Automated GitOps workflows can fail silently if paths or revisions are misconfigured.
 
 - Keeping a screenshot log of errors helps debug issues faster and documents your troubleshooting process.
+
+## Why This Project Matters
+
+This project demonstrates:
+
+- Real-world GitOps troubleshooting
+
+- Secure multi-tenant Kubernetes design
+
+- Policy-driven governance
+
+- Production-style debugging and documentation
